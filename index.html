@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>Coding Challenge 1</title>
+</head>
+<body>
+	<div class="container">
+		<div class="container-spacer"></div>
+		<div class="input-style">
+			<input id="insNumber" class="email" type="text" name="txtnumber" placeholder="Insert number here...">
+		</div>
+		<div class="output-style">
+			<p id="outWords"></p>
+		</div>
+	</div>
+</body>
+<script>
+	const element = document.getElementById("insNumber")
+	element.addEventListener("input", function(e) {
+	    var n = document.getElementById("insNumber").value
+	    var words = numberToWords(n)
+	    document.getElementById("outWords").innerHTML = words
+	});
+</script>
+<script type="text/javascript" src="main.js"></script>
+</html>
